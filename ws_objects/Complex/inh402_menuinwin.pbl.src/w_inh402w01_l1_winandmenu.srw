@@ -2,6 +2,8 @@
 forward
 global type w_inh402w01_l1_winandmenu from window
 end type
+type cb_1 from commandbutton within w_inh402w01_l1_winandmenu
+end type
 type cb_execute from commandbutton within w_inh402w01_l1_winandmenu
 end type
 type lb_items from listbox within w_inh402w01_l1_winandmenu
@@ -45,6 +47,7 @@ long backcolor = 67108864
 string icon = "AppIcon!"
 boolean center = true
 event ue_runall ( )
+cb_1 cb_1
 cb_execute cb_execute
 lb_items lb_items
 cb_clear cb_clear
@@ -517,6 +520,7 @@ end function
 
 on w_inh402w01_l1_winandmenu.create
 if this.MenuName = "m_inh402_l2_no1" then this.MenuID = create m_inh402_l2_no1
+this.cb_1=create cb_1
 this.cb_execute=create cb_execute
 this.lb_items=create lb_items
 this.cb_clear=create cb_clear
@@ -530,7 +534,8 @@ this.gb_1=create gb_1
 this.gb_2=create gb_2
 this.cb_cotviewresult=create cb_cotviewresult
 this.cb_cotautorun=create cb_cotautorun
-this.Control[]={this.cb_execute,&
+this.Control[]={this.cb_1,&
+this.cb_execute,&
 this.lb_items,&
 this.cb_clear,&
 this.cb_close,&
@@ -547,6 +552,7 @@ end on
 
 on w_inh402w01_l1_winandmenu.destroy
 if IsValid(MenuID) then destroy(MenuID)
+destroy(this.cb_1)
 destroy(this.cb_execute)
 destroy(this.lb_items)
 destroy(this.cb_clear)
@@ -584,6 +590,21 @@ cb_clear.Event post Clicked()
 wf_CreateResultSet()
 //end:event open
 end event
+
+type cb_1 from commandbutton within w_inh402w01_l1_winandmenu
+integer x = 1431
+integer y = 2152
+integer width = 457
+integer height = 128
+integer taborder = 50
+integer textsize = -12
+integer weight = 400
+fontcharset fontcharset = ansi!
+fontpitch fontpitch = variable!
+fontfamily fontfamily = swiss!
+string facename = "Arial"
+string text = "none"
+end type
 
 type cb_execute from commandbutton within w_inh402w01_l1_winandmenu
 integer x = 2437

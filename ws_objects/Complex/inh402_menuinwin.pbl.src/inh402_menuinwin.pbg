@@ -12,6 +12,7 @@
  "m_inh402_l4_no1.srm" "inh402_menuinwin.pbl";
  "m_main.srm" "inh402_menuinwin.pbl";
  "n_cst_config.sru" "inh402_menuinwin.pbl";
+ "w_402.srw" "inh402_menuinwin.pbl";
  "w_inh402w01_l1_winandmenu.srw" "inh402_menuinwin.pbl";
  "w_inh402w02_l2_iw01.srw" "inh402_menuinwin.pbl";
  "w_inh402w03_l2_iw01.srw" "inh402_menuinwin.pbl";
