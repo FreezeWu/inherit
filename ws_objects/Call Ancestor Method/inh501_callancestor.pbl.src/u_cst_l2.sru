@@ -10,10 +10,14 @@ global u_cst_l2 u_cst_l2
 
 forward prototypes
 public subroutine wf_test2 ()
+public function integer wf_test22 ()
 end prototypes
 
 public subroutine wf_test2 ();//test2
 end subroutine
+
+public function integer wf_test22 ();return 1
+end function
 
 on u_cst_l2.create
 call super::create
