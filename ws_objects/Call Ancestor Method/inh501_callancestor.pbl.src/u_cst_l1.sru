@@ -17,6 +17,13 @@ cb_1 cb_1
 end type
 global u_cst_l1 u_cst_l1
 
+forward prototypes
+public subroutine wf_test1 ()
+end prototypes
+
+public subroutine wf_test1 ();//test1
+end subroutine
+
 on u_cst_l1.create
 this.cb_1=create cb_1
 this.Control[]={this.cb_1}
