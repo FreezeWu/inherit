@@ -16,5 +16,6 @@
  "w_inh501w01_callancestor.srw" "inh501_callancestor.pbl";
  "w_mdi.srw" "inh501_callancestor.pbl";
  "w_pbvsjs.srw" "inh501_callancestor.pbl";
+ "w_test1.srw" "inh501_callancestor.pbl";
  "w_validation.srw" "inh501_callancestor.pbl";
 @end;

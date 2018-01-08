@@ -8,6 +8,13 @@ global type u_cst_l3 from u_cst_l2
 end type
 global u_cst_l3 u_cst_l3
 
+forward prototypes
+public subroutine wf_test3 ()
+end prototypes
+
+public subroutine wf_test3 ();//test3
+end subroutine
+
 on u_cst_l3.create
 call super::create
 end on
